@@ -1,6 +1,11 @@
 <div>
   <% teams.forEach(function(team) { %>
     <% include ./show %>
+      <a href="/teams/edit/<%= team.name %>" class="btn btn-default">Edit</a>
+  <a href="/teams/delete/<%= team.name %>" class="btn btn-default">Delete</a>
     <hr />
   <% }) %>
+
+
+
 </div>
